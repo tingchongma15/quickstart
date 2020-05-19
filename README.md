@@ -1,6 +1,6 @@
 I discovered a run time error at wildfly 19.1.x quickstart jaxrs-client wnen running the Arquillian Tests.
-'$ cd jaxrs-client'
-'$ mvn clean verify -Parq-remote'
+$ cd jaxrs-client
+$ mvn clean verify -Parq-remote
 ...
 [ERROR] requestResponseFiltersTest(org.jboss.as.quickstarts.jaxrsclient.test.ContactsRestClientIT)  Time elapsed: 0.325 s  <<< ERROR!
 java.lang.NoClassDefFoundError: org/apache/commons/logging/LogFactory
@@ -11,7 +11,7 @@ Caused by: java.lang.ClassNotFoundException: org.apache.commons.logging.LogFacto
 My environment are:
 JBoss EAP-7.3.0
 
-'$ mvn -version'
+$ mvn -version
 Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
 Maven home: /home/tc/maven/apache-maven-3.6.3
 Java version: 1.8.0_251, vendor: Oracle Corporation, runtime: /home/tc/jdk/jdk1.8.0_251/jre
